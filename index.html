@@ -240,7 +240,7 @@
 </div>
 </div>
 
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -248,11 +248,22 @@
   <title>YouTube Gallery</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #111;
       color: white;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
     }
 
     .video-container {
@@ -260,6 +271,10 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       padding: 20px;
+
+      /* IMPORTANT FIXES */
+      height: auto;
+      overflow: visible;
     }
 
     .video-container iframe {
@@ -268,18 +283,12 @@
       border: none;
       border-radius: 10px;
     }
-
-    h1 {
-      text-align: center;
-      padding: 20px;
-    }
   </style>
-
 </head>
 
 <body>
 
-  <h1>My YouTube Videos</h1>
+  <h1>Videos</h1>
 
   <div class="video-container">
 
@@ -298,6 +307,9 @@
     <iframe src="https://www.youtube.com/embed/TEI_NPoUBWo" allowfullscreen></iframe>
 
   </div>
+
+</body>
+</html>
 
 </body>
 </html>

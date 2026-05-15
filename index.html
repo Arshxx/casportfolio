@@ -111,6 +111,15 @@
       text-align: center;
     }
 
+        .service-grid-big {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.service-grid-big .image-placeholder {
+  height: 260px;
+}
+    
     .image-placeholder img {
       width: 100%;
       height: 100%;
@@ -528,14 +537,7 @@
 
     <h2 class="section-title">Service</h2>
 
-    .service-grid-big {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
 
-.service-grid-big .image-placeholder {
-  height: 260px;
-}
     <!-- Service 1 -->
     <div class="card">
 

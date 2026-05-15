@@ -99,17 +99,19 @@
     }
 
     .image-placeholder {
-      height: 200px;
-      border: 2px dashed #64748b;
-      border-radius: 14px;
-      overflow: hidden;
-      background: #0f172a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #94a3b8;
-      text-align: center;
-    }
+  height: 200px;
+  border: 2px dashed #64748b;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
         .service-grid-big {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -120,11 +122,6 @@
   height: 260px;
 }
     
-    .image-placeholder img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
 
     .video-container {
       width: 100%;

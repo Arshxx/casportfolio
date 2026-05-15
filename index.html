@@ -64,6 +64,7 @@
       padding: 70px 10%;
     }
 
+    
     .section-title {
       font-size: 2.7rem;
       margin-bottom: 35px;
@@ -98,6 +99,27 @@
       margin-top: 20px;
     }
 
+    .service-grid-custom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.service-grid-custom .image-placeholder {
+  height: 220px;
+  border: 2px dashed #64748b;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.service-grid-custom .image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .image-placeholder {
   height: 200px;
   border: 2px dashed #64748b;
@@ -649,8 +671,7 @@
 
       <h3>Service Activity 3</h3>
 
-         <div class="image-showcase">
-
+<div class="service-grid-custom">
   <div class="image-placeholder">
     <img src="service7.png" alt="">
   </div>
@@ -659,10 +680,9 @@
     <img src="service8.png" alt="">
   </div>
 
-<div class="image-placeholder">
+  <div class="image-placeholder">
     <img src="service9.png" alt="">
   </div>
-
 </div>
 
       <p>

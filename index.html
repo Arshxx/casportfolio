@@ -528,12 +528,20 @@
 
     <h2 class="section-title">Service</h2>
 
+    .service-grid-big {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.service-grid-big .image-placeholder {
+  height: 260px;
+}
     <!-- Service 1 -->
     <div class="card">
 
       <h3> Service Activity 1</h3>
 
-      <div class="image-grid">
+      <div class="image-grid service-grid-big">
 
   <div class="image-placeholder">
     <img src="service1.jpeg" alt="">

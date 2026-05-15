@@ -53,6 +53,7 @@
       text-decoration: none;
       font-size: 1.1rem;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
@@ -75,16 +76,19 @@
       border-radius: 20px;
       padding: 30px;
       margin-bottom: 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
     }
 
     .card h3 {
+      margin-bottom: 20px;
       color: #38bdf8;
-      margin-bottom: 15px;
+      font-size: 1.6rem;
     }
 
     .card p {
       margin-top: 20px;
       color: #cbd5e1;
+      font-size: 1rem;
     }
 
     .image-grid {
@@ -94,43 +98,37 @@
       margin-top: 20px;
     }
 
-.image-placeholder {
-  height: 200px;
-  border: 2px dashed #64748b;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #0f172a;
-  display: block;
-}
+    .image-placeholder {
+      height: 200px;
+      border: 2px dashed #64748b;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #94a3b8;
+      text-align: center;
+    }
 
     .image-placeholder img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
     .video-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      border-radius: 15px;
       margin-top: 20px;
+      background: black;
     }
 
     .video-container iframe {
       width: 100%;
-      aspect-ratio: 16/9;
-      border-radius: 10px;
-      border: none;
-    }
-
-    .service-grid-big {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
-
-    .service-grid-big .image-placeholder {
-      height: 260px;
+      height: 100%;
     }
 
     footer {
@@ -151,7 +149,7 @@
     <p>Creativity - Activity - Service</p>
   </header>
 
-  <!-- NAV -->
+  <!-- NAVIGATION -->
   <nav>
     <a href="#creativity">Creativity</a>
     <a href="#activity">Activity</a>
@@ -165,83 +163,309 @@
 
     <!-- Arduino Lessons -->
     <div class="card">
-      <h3>Arduino Lessons</h3>
+      <h3>Arduino Lessons </h3>
 
-      <div class="image-grid">
-        <div class="image-placeholder"><img src="arduino18.jpeg"></div>
-        <div class="image-placeholder"><img src="arduino17.jpeg"></div>
-        <div class="image-placeholder"><img src="arduino16.jpeg"></div>
-        <div class="image-placeholder"><img src="arduino15.jpeg"></div>
-        <div class="image-placeholder"><img src="arduino14.jpeg"></div>
-        <div class="image-placeholder"><img src="arduino13.jpeg"></div>
-      </div>
+   <div class="image-grid">
 
+ <div class="image-placeholder">
+  <img src="arduino18.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino17.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino16.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino15.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino14.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino13.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino12.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino11.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino10.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino9.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino8.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino7.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino6.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino5.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino4.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino3.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino2.jpeg" alt="">
+</div>
+
+<div class="image-placeholder">
+  <img src="arduino1.jpeg" alt="">
+</div>
+</div>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Gallery</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+
+
+      height: auto;
+      overflow: visible;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Videos</h1>
+
+  <div class="video-container">
+
+    <iframe src="https://www.youtube.com/embed/c8l2HRqMWUk" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/02jckHdZVo8" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/ZTxZvIHB9Qg" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/NAH0MjF0y2s" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/8vdFjvWpk1g" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/k1vb_XoXty8" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/x1IyFPSHwrw" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/qoEs1OhaWTQ" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VEBEukS7cfg" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/hWKyMJFcXGc" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/sWiQ_R7oij0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/-FfcXuKNTqQ" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/TEI_NPoUBWo" allowfullscreen></iframe>
+
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>
       <p>
-        To build my understanding of Arduino, I completed all 24 lessons step by step...
+        To build my understanding of Arduino and how to use programming along with it, I completed all 24
+        lessons included in the Arduino Super Starter Kit over March.
+        Instead of rushing through the activities, I worked on them bit by bit
+        each day so I could fully understand the concepts being taught. Through
+        these lessons, I learned the basics of circuits, LEDs, resistors,
+        sensors, wiring, and coding using the Arduino IDE. Completing lessons
+        helped me improve my problem-solving skills, patience, and ability to troubleshoot errors (A lot of them, as the
+        kit instructions even had flaws that had to be fixed by researching and talking with others in the field)
+        independently while building a strong foundation for more advanced Arduino projects in the future.
       </p>
     </div>
 
-    <!-- Notes -->
+    <!-- Arduino Notes -->
     <div class="card">
       <h3>Arduino Notes</h3>
 
       <div class="image-grid">
-        <div class="image-placeholder"><img src="arduino4.jpeg"></div>
-        <div class="image-placeholder"><img src="arduino5.jpeg"></div>
-        <div class="image-placeholder"><img src="arduino6.jpeg"></div>
+        <div class="image-placeholder">
+          <img src="images/arduino4.jpg" alt="Arduino Project 2">
+        </div>
+
+        <div class="image-placeholder">
+          <img src="images/arduino5.jpg" alt="Arduino Project 2">
+        </div>
+
+        <div class="image-placeholder">
+          <img src="images/arduino6.jpg" alt="Arduino Project 2">
+        </div>
       </div>
 
       <p>
-        I took structured notes for each lesson to reinforce learning...
+      <p>
+        Throughout the 24 Arduino Super Starter Kit lessons, I made notes
+        for each activity to help reinforce my learning. After completing each lesson,
+        I wrote down the key concepts, wiring steps, code explanations, and any issues. This helped me better understand
+        how each component works and made it easier to remember important ideas such as
+        how circuits are built, how sensors respond, and how code controls hardware.
+        Taking structured notes for every lesson improved my organization skills and
+        allowed me to reflect on my progress as I gradually built a strong foundation
+        in Arduino.
+      </p>
       </p>
     </div>
 
     <!-- Project 1 -->
     <div class="card">
-      <h3>Arc Reactor Project</h3>
+      <h3>Creative Project 1 - Arc Reactor</h3>
 
-      <div class="image-placeholder">
-        <img src="workouttracker.jpeg">
+  <div class="image-placeholder">
+    <img src="images/workouttracker.jpeg" alt="">
+  </div>
+        
       </div>
 
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/5TUuDeVMlJY"></iframe>
-      </div>
+         <div class="video-container">
 
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/5TUuDeVMlJY"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+</div>
+      
       <p>
-        LED circular arc reactor attempt using Arduino...
+      <p>
+        My first creativity project was an LED light sequencing system controlled by code, where I attempted to design
+        it as an arc reactor inspired by Iron Man. I arranged multiple LEDs in a circular pattern inside a cardboard
+        structure and programmed them to light up in sequences using Arduino. The goal was to create a visually
+        appealing, rotating light effect similar to an arc reactor design. However, the final result did not match my
+        original vision, as the physical structure was less circular than expected and did not look like an arc reactor.
+        Despite this, the project helped me learn important skills in LED control, timing in code, and how design
+        limitations can affect the final outcome of a build. It also taught me how to improve planning and precision in
+        future creative projects.
+      </p>
       </p>
     </div>
 
     <!-- Project 2 -->
     <div class="card">
-      <h3>Phantom Thieves Card</h3>
+      <h3>Creative Project 2 - Phantom Thieves Calling Card </h3>
 
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/44Qb7e5qkuk"></iframe>
-      </div>
+    <div class="video-container">
+
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/44Qb7e5qkuk"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+</div>
+
 
       <p>
-        Text display + buzzer synchronized system...
+      <p>
+        My second creativity project was a Phantom Thieves-inspired calling card display that focused on text and sound
+        rather than lighting. I programmed an Arduino system that displayed themed text on a screen and paired it with a
+        buzzer that produced a dramatic sound effect when the message appeared. The goal was to recreate the suspenseful
+        calling card moment from Persona 5 in a simple electronic format. I worked on coordinating the timing between
+        the text display and the buzzer so that both elements triggered together for maximum impact. This project helped
+        me understand how to synchronize output components like displays and buzzers, and improved my coding skills in
+        timing and sequencing events in Arduino projects.
+      </p>
       </p>
     </div>
 
     <!-- Project 3 -->
     <div class="card">
-      <h3>Iron Man Helmet</h3>
+      <h3>Creative Project 3 - Iron Man Helmet</h3>
 
       <div class="image-grid">
-        <div class="image-placeholder"><img src="iron1.jpeg"></div>
-        <div class="image-placeholder"><img src="iron2.jpeg"></div>
+        
+       <div class="image-placeholder">
+          <img src="iron1.jpeg" alt="">
+        </div>
+
+            <div class="image-placeholder">
+          <img src="iron2.jpeg" alt="">
+        </div>
+        
+            <div class="image-placeholder">
+          <img src="iron3.jpeg" alt="">
+        </div>
+        
+            <div class="image-placeholder">
+          <img src="iron4.jpeg" alt="">
+        </div>
       </div>
 
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/PN1_FI6VBvw"></iframe>
-        <iframe src="https://www.youtube.com/embed/iu1si1CkQt8"></iframe>
-      </div>
+
+  <iframe src="https://www.youtube.com/embed/PN1_FI6VBvw" allowfullscreen></iframe>
+
+  <iframe src="https://www.youtube.com/embed/iu1si1CkQt8" allowfullscreen></iframe>
+
+</div>
 
       <p>
-        Servo motor failed due to weight of helmet...
+      <p>
+        My third creativity project was an Iron Man inspired mechanical helmet design where I attempted to use a servo
+        motor to lift the faceplate. I attached a string mechanism to the servo with ducttape having the idea that it
+        would pull the
+        helmet face upward smoothly, similar to the opening motion of Iron Man's suit. Inspired by a Instagram reel I
+        saw using servos to make cardboard fingers go up and down. However, the project did not
+        fully work as planned because the helmet structure ended up being heavier than the servo motors lifting
+        capacity. As a result, the servo was unable to consistently raise the faceplate. Even though not
+        successful in its final mechanical goal, the project helped me understand limitations, mechanical load
+        balancing, and the importance of matching hardware strength to design requirements. It also taught me how to
+        improve future prototypes by testing weight and resistance earlier in the design process.
+      </p>.
       </p>
     </div>
 
@@ -252,28 +476,49 @@
 
     <h2 class="section-title">Activity</h2>
 
+    <!-- Workout Video -->
     <div class="card">
+
       <h3>Workout Journey</h3>
 
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Workout Video" frameborder="0" allowfullscreen>
+        </iframe>
       </div>
 
       <p>
-        Dumbbell training, consistency challenges, reached 15lb goal...
+      <p>
+        During my CAS activity experience, I focused on improving my physical health and consistency through regular
+        dumbbell workouts. I used dumbbells as my main form of resistance training and tracked my progress over time to
+        build strength, endurance, and discipline. However, I found it challenging to stay consistent due to other life
+        responsibilities and time constraints, such as getting sick way more than ever this year and a sudden family
+        emergency, which disrupted my workout schedule. Because of this
+        inconsistency, I was not able to fully reach my goal of progressing to a 25lb dumbbell, even though it was
+        realistically achievable with consistent training. I got up to 15 lb after starting at 10lb. Despite not
+        reaching that target, the experience taught me the
+        importance of routine, commitment, and adapting goals based on real-life circumstances, while still making
+        meaningful progress in my fitness journey. Helping me with future activites and learning the difficulty people
+        put themselves through to remain consistent
       </p>
+      </p>
+
     </div>
 
+    <!-- Workout Tracker -->
     <div class="card">
-      <h3>Workout Tracker</h3>
 
-      <div class="image-placeholder">
-        <img src="workouttracker.jpeg">
-      </div>
+      <h3>Dumbbell Workout Tracker</h3>
+ 
+  <div class="image-placeholder">
+    <img src="workouttracker.jpeg" alt="">
+  </div>
 
       <p>
-        Progress tracking and consistency reflection...
+        These images show my workout tracker and progress throughout my
+        fitness journey. I learned the importance of consistency, taking breaks during injuries or illness, and tracking
+        my progress.
       </p>
+
     </div>
 
   </section>
@@ -283,45 +528,126 @@
 
     <h2 class="section-title">Service</h2>
 
+    .service-grid-big {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.service-grid-big .image-placeholder {
+  height: 260px;
+}
+    <!-- Service 1 -->
     <div class="card">
-      <h3>Social Justice Club</h3>
+
+      <h3> Service Activity 1</h3>
 
       <div class="image-grid service-grid-big">
-        <div class="image-placeholder"><img src="service1.jpeg"></div>
-        <div class="image-placeholder"><img src="service2.jpeg"></div>
+
+  <div class="image-placeholder">
+    <img src="service1.jpeg" alt="">
+  </div>
+
+  <div class="image-placeholder">
+    <img src="service2.jpeg" alt="">
+  </div>
+
+</div>
+
+      <p>
+      <p>
+        My first service experience was through the Social Justice Club, where I aimed to take part in activities
+        focused on raising awareness about important community and global issues. However, my involvement was limited
+        because the club was temporarily discontinued during the first semester due to disruptions following the teacher
+        strike and barely any meetings and volunteer opportunities that followed. Despite this, I was still able to
+        participate in key events once activities resumed. I took part in
+        MMWS2 (Missing and Murdered Indigenous Women and Girls awareness initiative), where I learned about the ongoing
+        impact of violence against Indigenous women and the importance of remembrance and advocacy. I also participated
+        in Pink Shirt Day, which focused on anti-bullying awareness and promoting kindness and inclusion in schools.
+        These experiences helped me understand the value of standing up for social justice issues even when
+        opportunities are limited, and showed me how small actions and participation in awareness events can still
+        contribute to meaningful change in the community.
+      </p>
+      </p>
+
+    </div>
+
+    <!-- Service 2 -->
+    <div class="card">
+
+      <h3>Service Activity 2</h3>
+
+      <div class="image-grid">
+        <div class="image-placeholder">Service Image</div>
+        <div class="image-placeholder">Service Image</div>
       </div>
 
       <p>
-        MMWS2 + Pink Shirt Day participation...
+      <p>
+        My second service experience was with the “All The Same” initiative, where I created digital cards using Canva
+        to highlight and support people from minority cultures. The purpose of this project was to promote inclusion,
+        awareness, and respect for cultural diversity by recognizing different backgrounds and identities in a positive
+        way. I designed each digital card to represent different minority groups and included messages that emphasized
+        equality and unity. Through this experience, I developed my creativity and digital design skills while also
+        learning more about the importance of representation and cultural understanding. It helped me realize how
+        digital media can be used as a tool to spread awareness and encourage acceptance in a simple but meaningful way.
       </p>
+      </p>
+
     </div>
 
+    <!-- Service 3 -->
     <div class="card">
-      <h3>All The Same - Canva Cards</h3>
+
+      <h3>Service Activity 3</h3>
+
+      <div class="image-grid">
+        <div class="image-placeholder">Service Image</div>
+        <div class="image-placeholder">Service Image</div>
+      </div>
 
       <p>
-        Digital cards promoting cultural inclusion...
+      <p>
+      <p>
+        My third service experience in the “All The Same” initiative focused solely on writing research-based responses
+        to structured prompts about minority cultures and representation. I researched different cultural groups and
+        social issues related to inclusion, then used this information to write clear and thoughtful answers that
+        explained the importance of diversity and equality in society. The goal of the writing was to educate others and
+        support the visual Canva cards by providing deeper context and meaning behind each theme. Through this process,
+        I improved my research skills, learned how to summarize information from reliable sources, and developed my
+        ability to express social justice ideas in a clear and organized way. This experience showed me how written work
+        alone can be powerful in raising awareness and encouraging people to think more critically about inclusion and
+        respect for different cultures.
       </p>
+      </p>
+      </p>
+
     </div>
 
+    <!-- Conclusion -->
     <div class="card">
-      <h3>All The Same - Research Writing</h3>
+
+      <h3>CAS Reflection & Conclusion</h3>
 
       <p>
-        Research-based responses on minority cultures...
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>CAS Reflection</h3>
-
       <p>
-        Overall CAS growth summary...
+        my CAS experience helped me grow across creativity, activity, and service by pushing me to try new
+        skills, stay consistent, and reflect on my progress. In Creativity, I developed Arduino-based projects that
+        combined coding, electronics, and design, where I learned through both successful builds and failures that
+        helped me improve my problem-solving and technical understanding. In activity, I focused on maintaining a
+        regular dumbbell workout routine to improve my strength and discipline, although I struggled with consistency
+        due to time and life commitments, which prevented me from fully reaching my 25lb goal. In service, I
+        participated in the Social Justice Club, awareness events like MMWS2 and Pink Shirt Day, and contributed to the
+        “All The Same” initiative through both design and written research, which strengthened my understanding of
+        inclusion and social issues. In summary, CAS helped me become more reflective, responsible, and aware of both my
+        personal growth and my impact on the community.
       </p>
+      </p>
+
     </div>
 
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>CAS Portfolio Website</p>
   </footer>

@@ -113,6 +113,28 @@
   display: block;
 }
 
+ .image-showcase {
+  width: 100%;
+  max-width: 1000px;
+  height: 80vh;
+  margin: 20px auto;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-showcase img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+    
 .image-placeholder.big-image {
   width: 100%;
   max-width: 1000px;
@@ -386,8 +408,8 @@
     <div class="card">
       <h3>Creative Project 1 - Arc Reactor</h3>
 
-  <div class="image-grid service-grid-big">
-
+<div class="image-showcase">
+  
     <div class="image-placeholder">
     <img src="arcreactor.jpeg" alt="">
     </div>

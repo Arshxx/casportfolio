@@ -99,26 +99,36 @@
     }
 
 .image-placeholder {
-  width: 100%;
-  max-width: 1000px;
-  height: 600px;
-  margin: 20px auto;
+  height: 200px;
   border: 2px dashed #64748b;
   border-radius: 14px;
   overflow: hidden;
   background: #0f172a;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-placeholder.big-image {
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image-placeholder img {
+.image-placeholder.big-image img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
-  display: block;
 }
 
         .service-grid-big {
@@ -522,10 +532,10 @@
     <div class="card">
 
       <h3>Dumbbell Workout Tracker</h3>
- 
-  <div class="image-placeholder">
-    <img src="workouttrack.jpeg" alt="">
-  </div>
+      
+<div class="image-placeholder big-image">
+  <img src="workouttrack.jpeg" alt="">
+</div>
 
       <p>
         This image show my workout tracker and progress throughout my
